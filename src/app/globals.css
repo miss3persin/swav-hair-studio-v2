@@ -13,7 +13,7 @@ html {
 }
 
 
-
+/* hamburger menu stylings for navbar */
 .hamburger-menu {
   cursor: pointer;
   display: flex;
@@ -444,16 +444,17 @@ input#general:checked + .radio-label .radio-background .checkmark {
 @media (max-width: 640px) {
   .previous-click, .next-click {
     height: 100%;
-    width: 35px;
+    width: 100px;
   }
+
 }
 
 /* xs */
 @media (max-width: 475px) {
   .previous-click, .next-click {
     height: 100%;
-    width: 0px;
   }
+
 }
 
 

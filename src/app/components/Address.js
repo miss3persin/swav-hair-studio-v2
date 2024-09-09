@@ -31,7 +31,7 @@ export const Address = ({ stores, currentIndex, handlePrevStore, handleNextStore
 
           <div className='flex justify-between px-3 py-1 absolute w-full top-1/2'>
             <button
-              className={`hoverable ${currentIndex === 0 ? 'cursor-default opacity-30' : ''}`}
+              className={`w-5 h-10 hoverable ${currentIndex === 0 ? 'cursor-default opacity-30' : ''}`}
               onClick={handlePrevStore}
               disabled={currentIndex === 0}
             >
@@ -39,7 +39,7 @@ export const Address = ({ stores, currentIndex, handlePrevStore, handleNextStore
             </button>
 
             <button
-              className={`hoverable ${currentIndex === stores.length - 1 ? 'cursor-default opacity-30' : ''}`}
+              className={`w-5 h-10 pl-2 hoverable ${currentIndex === stores.length - 1 ? 'cursor-default opacity-30' : ''}`}
               onClick={handleNextStore}
               disabled={currentIndex === stores.length - 1}
             >
