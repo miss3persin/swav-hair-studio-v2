@@ -37,9 +37,7 @@ export const FounderSection = () => {
             </p>
           </div>
 
-          <Link href="/about">
-          <TransparentOutlineBtn text='ABOUT US' />
-          </Link>
+          <TransparentOutlineBtn text='ABOUT US' link='/about' />
         </div>
 
         <div className='w-full h-[30rem] border-[#ffffff26] border flex items-center justify-center rounded-3xl overflow-hidden'>

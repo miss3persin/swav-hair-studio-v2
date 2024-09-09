@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { Address } from '../components/Address'
 import newcastle_img from '/public/newcastle.jpg'
 import sunderland_img from '/public/sunderland.jpg'
-import { MapComponent } from '../components/MapComponent'
 import top_curve from '/public/curve-guide-top.png'
 import bottom_curve from '/public/curve-guide-bottom.png'
 import Image from 'next/image'
@@ -83,9 +82,7 @@ export const HomeLocationSection = () => {
           className='absolute'
         />
       </div>
-      {/* <div className='container px-20'>
-  <MapComponent coordinates={storeData[currentIndex].coordinates} zoom={15} />
-  </div> */}
+
     </div>
   )
 }
