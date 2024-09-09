@@ -60,9 +60,9 @@ export const VariousLocationsSection = () => {
     }
 
   return (
-    <div className='relative pt-40 pb-16'>
+    <div className='relative pt-32 md:pt-40 pb-16'>
         <div className='container px-14'>
-            <SectionTitle text='SWAV HAIR LOCATIONS'/>
+            <SectionTitle text='SWAV HAIR LOCATIONS' color='#222222B3'/>
         </div>
 
       <Address

@@ -10,17 +10,17 @@ import { RingFeatures } from '../components/RingFeatures'
 
 export const HeroSection = () => {
   return (
-    <div className='bg-customBlack pb-40 pt-40'>
+    <div className='bg-customBlack pb-32 sm:pb-40 pt-32 md:pt-40'>
       <div className='container px-14'>
         <SectionTitle text='SWAV HAIR STUDIOS' color='#FFFFFFB3' />
 
-        <div className='flex justify-between gap-14'>
+        <div className='flex justify-between lg:gap-14'>
           <div className='my-auto w-full text-customWhite'>
-            <div className='mb-5 flex flex-col gap-3'>
-              <p className='text-6xl leading-tight'>
+            <div className='mb-7 lg:mb-5 flex flex-col gap-5 lg:gap-3'>
+              <p className='text-3xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl leading-tight'>
                 Expert Grooming with Over 20 Years of Timeless Tradition
               </p>
-              <p className='text-lg font-light'>
+              <p className='text-sm sm:text-base xl:text-lg font-light'>
                 With over 2 decades of experience we pride ourselves in
                 providing expert barbering services and exceptional customer
                 service. A modern barbershop with all the traditional values,
@@ -34,17 +34,17 @@ export const HeroSection = () => {
             />
           </div>
 
-          <div className='relative'>
+          <div className='relative hidden lg:block'>
             <div className=''>
-              <div className='absolute left-20 top-16'>
+              <div className='absolute lg:-left-7 lg:top-3 xl:left-20 xl:top-16'>
                 <RingFeatures text='Haircut & Styling' />
               </div>
 
-              <div className='absolute right-5 top-1/3'>
+              <div className='absolute lg:-right-4 lg:top-16 xl:right-5 xl:top-1/3'>
                 <RingFeatures text='Haircare' />
               </div>
 
-              <div className='absolute bottom-28 left-8'>
+              <div className='absolute lg:bottom-10 lg:left-6 xl:bottom-28 xl:left-8'>
                 <RingFeatures text='Products' />
               </div>
             </div>

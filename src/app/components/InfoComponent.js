@@ -10,7 +10,7 @@ import clipper from '/public/Clipper_edited.png'
 
 export const InfoComponent = ({ sectionTitle, title, info }) => {
   return (
-    <div className='bg-customBlack pt-40 pb-10 h-full'>
+    <div className='bg-customBlack pt-32 md:pt-40 pb-10 h-full'>
       <div className='container px-14'>
         <SectionTitle text={sectionTitle} color='#FFFFFFB3' />
 

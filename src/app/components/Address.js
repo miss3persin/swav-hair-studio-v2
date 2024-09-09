@@ -12,7 +12,7 @@ export const Address = ({ stores, currentIndex, handlePrevStore, handleNextStore
   return (
     <div className='container px-14'>
       <div className='flex lg:flex-row flex-col border'>
-        <div className='flex h-[30rem] sm:h-96 md:h-80 lg:h-[28rem] w-full overflow-hidden'>
+        <div className='flex h-[24rem] sm:h-96 md:h-80 lg:h-[28rem] w-full overflow-hidden'>
           <Image
             src={currentStore.imageUrl}
             alt={currentStore.name}

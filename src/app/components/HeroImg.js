@@ -8,11 +8,11 @@ import Image from 'next/image'
 
 export const HeroImg = () => {
   return (
-    <div className='relative flex items-center justify-center w-[30rem] h-[30rem]'>
+    <div className='relative flex items-center justify-center lg:w-80 lg:h-80 xl:w-[30rem] xl:h-[30rem]'>
         
 <svg
   id='rotating-svg'
-  className='absolute animate-spin-slow'
+  className='absolute animate-spin-slow lg:w-[235px] lg:h-[235px] xl:w-[335px] xl:h-[335px]'
   width='335'
   height='335'
   viewBox='0 0 448 451'
@@ -27,7 +27,7 @@ export const HeroImg = () => {
 
 <svg
   id='rotating-svg-2'
-  className='absolute animate-spin-slow-reverse'
+  className='absolute animate-spin-slow-reverse lg:w-[315px] lg:h-[315px] xl:w-[415px] xl:h-[415px]'
   width='415'
   height='415'
   viewBox='0 0 448 451'
@@ -41,7 +41,7 @@ export const HeroImg = () => {
 </svg>
 
       
-      <div className='w-64 h-64 rounded-full overflow-hidden flex items-center justify-center absolute'>
+      <div className='lg:w-48 lg:h-48 xl:w-64 xl:h-64 rounded-full overflow-hidden flex items-center justify-center absolute'>
         <Image
           src={hero_img}
           alt='SWAV HAIR STUDIO'

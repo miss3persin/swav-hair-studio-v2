@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export const StorySection = () => {
   return (
-    <div className='bg-customBlack pb-28 pt-40'>
+    <div className='bg-customBlack pb-28 pt-32 md:pt-40'>
       <div className='container px-14'>
         <div className='pb-7'>
           <SectionTitle text='ABOUT SWAV HAIR' color='#FFFFFFB3' />

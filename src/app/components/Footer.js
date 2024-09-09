@@ -16,9 +16,9 @@ export const Footer = ({
     <div
       className={`bg-${bgColor} text-${textColor} border-t border-${textColor} border-opacity-15 py-16`}
     >
-      <div className='container px-14'>
-        <div className='mb-14 flex justify-between pr-44 text-[0.8rem] font-semibold'>
-          <div className='flex flex-col gap-2'>
+      <div className='container px-8 sm:px-14'>
+        <div className='mb-14 flex justify-between lg:pr-44 text-[0.7rem] font-semibold'>
+          <div className='flex flex-col gap-2 w-full'>
             <p className='font-bold'>CONTACT INFORMATION</p>
             
             <a href='tel:+447732175493' className='hoverable font-semibold'>
@@ -33,7 +33,9 @@ export const Footer = ({
             </a>
           </div>
 
-          <div className='flex flex-col gap-4'>
+          <div className='sm:flex justify-between w-full'>
+
+          <div className='flex flex-col gap-4 mb-4 sm:mb-0 text-right sm:text-left'>
             <Link href='/academy'>
               <p className='hoverable'>ACADEMY</p>
             </Link>
@@ -45,7 +47,7 @@ export const Footer = ({
             </Link>
           </div>
 
-          <div className='flex flex-col gap-4'>
+          <div className='flex flex-col gap-4 text-right sm:text-left'>
             <Link href='/haircare'>
               <p className='hoverable'>HAIRCARE</p>
             </Link>
@@ -59,12 +61,14 @@ export const Footer = ({
           </div>
         </div>
 
-        <div className='flex items-center gap-10'>
-          <p className='text-sm font-semibold'>
+        </div>
+
+        <div className='flex sm:flex-row flex-col sm:items-center gap-6 sm:gap-10'>
+          <p className='text-xs sm:text-sm font-semibold'>
             © 2024 Swav Barbers. All rights reserved.
           </p>
           <div className='item-center flex gap-5'>
-            <div className='hoverable relative flex h-6 w-6 items-center justify-center'>
+            <div className='hoverable relative flex h-4 w-4 sm:h-6 sm:w-6 items-center justify-center'>
               <Image
                 width={100}
                 height={100}
@@ -77,11 +81,11 @@ export const Footer = ({
               />
             </div>
 
-            <div className='hoverable relative flex h-6 w-6 items-center justify-center'>
-              <a href='https://www.tiktok.com/@swavhairstudio' target='_blank'>
+            <div className='hoverable relative flex h-4 w-4 sm:h-6 sm:w-6 items-center justify-center'>
+              <a className='h-4 w-4 sm:h-6 sm:w-6' href='https://www.tiktok.com/@swavhairstudio' target='_blank'>
                 <Image
-                  width={100}
-                  height={100}
+                  width={150}
+                  height={150}
                   src={img_2}
                   alt='tiktok'
                   layout='intrinsic'

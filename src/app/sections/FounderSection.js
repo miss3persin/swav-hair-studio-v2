@@ -11,18 +11,18 @@ import Image from 'next/image'
 export const FounderSection = () => {
   return (
     <div className='container px-14 pb-40'>
-      <div className='-mt-5'>
+      <div className='mt-5 sm:-mt-5'>
         <SectionTitle text='THE FOUNDER' color='#222222B3' />
       </div>
 
-      <div className='container flex items-center gap-10 mt-8 rounded-3xl bg-customBlack px-14 py-8 text-customWhite'>
-        <div className='my-auto w-full'>
+      <div className='container flex lg:flex-row flex-col-reverse items-center gap-5 sm:gap-10 mt-8 rounded-3xl bg-customBlack px-5 py-8 sm:px-14 sm:py-8 text-customWhite'>
+        <div className='my-auto w-full flex flex-col sm:block'>
           <div className='mb-5 flex flex-col gap-3'>
-            <p className='text-4xl'>
+            <p className='text-lg text-center sm:text-left sm:text-4xl'>
               Mr. KaySwav - Founder of Swav Hair Studio
             </p>
 
-            <p className='text-sm font-light'>
+            <p className='text-xs sm:text-sm font-light md:text-left text-justify '>
               Mr. KaySwav, the founder and creative force behind Swav Hair
               Studio, is a seasoned grooming expert with over two decades of
               experience. His passion for the craft, paired with an innovative
@@ -43,7 +43,7 @@ export const FounderSection = () => {
           <TransparentOutlineBtn text='ABOUT US' link='/about' />
         </div>
 
-        <div className='w-full h-[30rem] border-[#ffffff26] border flex items-center justify-center rounded-3xl overflow-hidden'>
+        <div className='w-full h-full sm:h-[30rem] border-[#ffffff26] border flex items-center justify-center rounded-3xl overflow-hidden'>
           <Image
             src={founder}
             alt='Mr. KaySwav'

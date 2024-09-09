@@ -6,7 +6,7 @@ import React from 'react'
 
 export const RingFeatures = ({text}) => {
   return (
-    <div className='text-customWhite font-light text-base bg-[#DFF0EA66] rounded-2xl px-5 py-1'>
+    <div className='text-customWhite font-light lg:text-sm xl:text-base bg-[#DFF0EA66] rounded-2xl px-5 py-1'>
         {text}
     </div>
   )

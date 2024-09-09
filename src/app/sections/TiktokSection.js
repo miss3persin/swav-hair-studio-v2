@@ -12,7 +12,7 @@ export const TiktokSection = () => {
   return (
     <div className='bg-customBlack pb-24 '>
     <div className='relative'>
-    <div className='container px-14 pt-10'>
+    <div className='container px-14 pt-5 sm:pt-10'>
     <SectionTitle text='TIKTOK HIGHLIGHTS' color='#FFFFFFB3' />
     </div>
 
@@ -20,7 +20,7 @@ export const TiktokSection = () => {
         <TiktokComponent/>
     </div>
 
-    <div className='w-full absolute -bottom-[1.5rem] select-none'>
+    <div className='w-full absolute hidden sm:block sm:-bottom-[3.9rem] md:-bottom-[3.5rem] lg:-bottom-[2.4rem] xl:-bottom-[1.5rem] select-none 2xl:hidden'>
         <Image
           src={top_curve}
           layout='intrinsic'

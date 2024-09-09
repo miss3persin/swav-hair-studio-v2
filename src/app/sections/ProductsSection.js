@@ -15,7 +15,7 @@ import Image from 'next/image'
 
 export const ProductsSection = () => {
   return (
-    <div className='h-full bg-customBlack pb-10 pt-40'>
+    <div className='h-full bg-customBlack pb-10 pt-32 md:pt-40'>
       <div className='container px-14'>
         <SectionTitle text='SWAV HAIR PRODUCTS' color='#FFFFFFB3' />
 

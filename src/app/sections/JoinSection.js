@@ -12,7 +12,7 @@ import { TransparentBtn } from '../components/TransparentBtn'
 export const JoinSection = () => {
   return (
     <div className='relative pb-16'>
-    <div className='w-full absolute -top-[3.25rem] select-none'>
+    <div className='w-full absolute -top-[3.25rem] select-none 2xl:hidden'>
       <Image
         src={top_curve}
         layout='intrinsic'

@@ -56,7 +56,7 @@ export const HomeLocationSection = () => {
 
   return (
     <div className='relative pt-14 pb-16'>
-      <div className='w-full absolute -top-[4.5rem] select-none'>
+      <div className='w-full absolute hidden sm:block sm:-top-[2.15rem] md:-top-[2.58rem] lg:-top-[3.5rem] xl:-top-[4.5rem] select-none 2xl:hidden'>
         <Image
           src={top_curve}
           layout='intrinsic'
@@ -73,7 +73,7 @@ export const HomeLocationSection = () => {
         handleNextStore={handleNextStore}
       />
 
-<div className='w-full absolute bottom-[3.5rem] select-none'>
+<div className='w-full absolute hidden sm:block sm:bottom-[1.6rem] md:bottom-[2rem] lg:bottom-[2.8rem] xl:bottom-[3.5rem] select-none 2xl:hidden'>
         <Image
           src={bottom_curve}
           layout='intrinsic'

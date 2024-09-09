@@ -13,6 +13,44 @@ html {
 }
 
 
+
+.hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 30px;
+}
+
+.hamburger-menu span {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  /* transition: transform 0.3s ease, opacity 0.3s ease; */
+  transition: all 0.3s ease-in-out;
+  /* transform-origin: center; */
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: 1px;
+  /* transform-origin: center; */
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 1px;
+  /* transform-origin: center; */
+}
+
+
+
+
 /* for the radio buttons on the contact section, tailwindcss couldn't surffice */
 .radio-label {
   display: flex;
@@ -82,14 +120,14 @@ input#general:checked + .radio-label .radio-background .checkmark {
 
 
 
-.video-player-container__main {
+/* .video-player-container__main {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-}
+} */
 
 .video-player-container {
     display: flex;
@@ -349,6 +387,15 @@ input#general:checked + .radio-label .radio-background .checkmark {
     height: 100%;
     width: 900px;
   }
+
+  .video-player-container__main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
 }
 
 /* 2xl */
@@ -357,6 +404,7 @@ input#general:checked + .radio-label .radio-background .checkmark {
     height: 100%;
     width: 380px;
   }
+
 
 }
 

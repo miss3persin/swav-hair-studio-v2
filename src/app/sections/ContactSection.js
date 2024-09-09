@@ -53,7 +53,7 @@ export const ContactSection = () => {
 
   return (
     <div>
-      <div className='container px-14 pt-40'>
+      <div className='container px-14 pt-32 md:pt-40'>
 
       {showError ? (
         <ErrorMessage
