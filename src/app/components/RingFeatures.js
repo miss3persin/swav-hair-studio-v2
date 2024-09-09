@@ -1,3 +1,7 @@
+'use client'
+
+// features on the hero section
+
 import React from 'react'
 
 export const RingFeatures = ({text}) => {

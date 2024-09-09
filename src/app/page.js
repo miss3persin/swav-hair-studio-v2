@@ -1,5 +1,7 @@
 import React from 'react'
 
+// home page sections
+
 import { HomeLocationSection } from './sections/HomeLocationSection'
 import { NavbarSection } from './sections/NavbarSection'
 import { HeroSection } from './sections/HeroSection'

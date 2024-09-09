@@ -1,5 +1,9 @@
 'use client'
 
+// This annoying tiktok component and script was devastating to implement
+
+//can't even comment it properly
+
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import heart_comment from '/public/heart_comment.png';
@@ -61,12 +65,12 @@ export const TiktokComponent = () => {
       if (document.visibilityState === 'hidden') {
         Object.values(videoRefs).forEach((ref) => ref.current?.pause());
       } else {
-        handleVideoPlayback(); // Resume playing only if in view
+        handleVideoPlayback();
       }
     };
 
     const handleScroll = () => {
-      handleVideoPlayback(); // Play/pause based on scroll
+      handleVideoPlayback();
     };
 
     document.addEventListener('visibilitychange', handleVisibilityChange);
@@ -79,16 +83,14 @@ export const TiktokComponent = () => {
   }, [playingVideoIndex]);
 
   useEffect(() => {
-    // Ensure the active video plays on load if it's in view
     handleVideoPlayback();
   
-    // Check and play the active video if it's in view
     setTimeout(() => {
       const activeVideoElement = videoRefs[playingVideoIndex]?.current;
       if (activeVideoElement && isElementInView(activeVideoElement)) {
         activeVideoElement.play();
       }
-    }, 100); // Small delay to ensure state update
+    }, 100);
   }, [activeContainers, playingVideoIndex]);
 
   const handleDivClick = () => {
@@ -105,7 +107,6 @@ export const TiktokComponent = () => {
     const newIndex = newContainers.indexOf('video-player');
     setPlayingVideoIndex(newIndex);
   
-    // Ensure the new active video starts playing
     setTimeout(() => {
       Object.keys(videoRefs).forEach((index) => {
         const videoElement = videoRefs[index].current;
@@ -117,7 +118,7 @@ export const TiktokComponent = () => {
           }
         }
       });
-    }, 100); // Delay to ensure state update
+    }, 100);
   };
   
 
@@ -146,18 +147,10 @@ export const TiktokComponent = () => {
                 src={videoUrl_1}
                 width={100}
                 height={100}
-                autoPlay={true} // Disable autoplay
+                autoPlay={true}
                 loop
               />
-              {/* <iframe
-                  width="100%"
-                  height="100%"
-                  src={videoUrl_1}
-                  // frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title="YouTube video player"
-                ></iframe> */}
+          
             </div>
             <div className='comments-section'>
               <div className='comments-header'>
@@ -167,7 +160,7 @@ export const TiktokComponent = () => {
                 <div className='comment'>
                   <div className='user-comment-container'>
                     <div className='comment-img w-10 h-10 rounded-full overflow-hidden'>
-                      <Image src={user_img_2} alt='' className='object-cover w-full h-full' />
+                      <Image src={user_img_2} alt='user' className='object-cover w-full h-full' />
                     </div>
 
                     <div className='comment-info'>
@@ -179,15 +172,15 @@ export const TiktokComponent = () => {
                   </div>
 
                   <div className='like-n-comment'>
-                    <Image src={comment_comment} alt='' />
-                    <Image src={heart_comment} alt='' />
+                    <Image src={comment_comment} alt='comments' />
+                    <Image src={heart_comment} alt='likes' />
                   </div>
                 </div>
 
                 <div className='comment'>
                   <div className='user-comment-container'>
                     <div className='comment-img w-10 h-10 rounded-full overflow-hidden'>
-                      <Image src={user_img_3} alt='' className='object-cover w-full h-full'/>
+                      <Image src={user_img_3} alt='user' className='object-cover w-full h-full'/>
                     </div>
 
                     <div className='comment-info'>
@@ -198,8 +191,8 @@ export const TiktokComponent = () => {
                     </div>
                   </div>
                   <div className='like-n-comment'>
-                    <Image src={comment_comment} alt='' />
-                    <Image src={heart_comment} alt='' />
+                    <Image src={comment_comment} alt='comments' />
+                    <Image src={heart_comment} alt='likes' />
                   </div>
                 </div>
 
@@ -218,18 +211,10 @@ export const TiktokComponent = () => {
                 src={videoUrl}
                 width={100}
                 height={100}
-                autoPlay={true} // Disable autoplay
+                autoPlay={true}
                 loop
               />
-              {/* <iframe
-                width='100%'
-                height='100%'
-                src={videoUrl}
-                // frameBorder="0"
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-                title='YouTube video player'
-              ></iframe> */}
+
             </div>
             <div className='comments-section'>
               <div className='comments-header'>
@@ -239,7 +224,7 @@ export const TiktokComponent = () => {
                 <div className='comment'>
                   <div className='user-comment-container'>
                     <div className='comment-img w-10 h-10 rounded-full overflow-hidden'>
-                      <Image src={user_img} alt='' className='object-cover w-full h-full'/>
+                      <Image src={user_img} alt='user' className='object-cover w-full h-full'/>
                     </div>
 
                     <div className='comment-info'>
@@ -251,8 +236,8 @@ export const TiktokComponent = () => {
                   </div>
 
                   <div className='like-n-comment'>
-                    <Image src={comment_comment} alt='' />
-                    <Image src={heart_comment} alt='' />
+                    <Image src={comment_comment} alt='comments' />
+                    <Image src={heart_comment} alt='likes' />
                   </div>
                 </div>
 
@@ -272,18 +257,10 @@ export const TiktokComponent = () => {
                 src={videoUrl_2}
                 width={100}
                 height={100}
-                autoPlay={true} // Disable autoplay
+                autoPlay={true}
                 loop
               />
-              {/* <iframe
-                width='100%'
-                height='100%'
-                src={videoUrl_2}
-                // frameBorder="0"
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-                title='YouTube video player'
-              ></iframe> */}
+
             </div>
             <div className='comments-section'>
               <div className='comments-header'>
@@ -293,7 +270,7 @@ export const TiktokComponent = () => {
                 <div className='comment'>
                   <div className='user-comment-container'>
                     <div className='comment-img w-10 h-10 rounded-full overflow-hidden'>
-                      <Image src={user_img_1} alt='' className='object-cover w-full h-full'/>
+                      <Image src={user_img_1} alt='user' className='object-cover w-full h-full'/>
                     </div>
 
                     <div className='comment-info'>
@@ -305,15 +282,15 @@ export const TiktokComponent = () => {
                   </div>
 
                   <div className='like-n-comment'>
-                    <Image src={comment_comment} alt='' />
-                    <Image src={heart_comment} alt='' />
+                    <Image src={comment_comment} alt='comments' />
+                    <Image src={heart_comment} alt='likes' />
                   </div>
                 </div>
 
                 <div className='comment'>
                   <div className='user-comment-container'>
                     <div className='comment-img w-10 h-10 rounded-full overflow-hidden'>
-                      <Image src={user_img_1} alt='' className='object-cover w-full h-full'/>
+                      <Image src={user_img_1} alt='user' className='object-cover w-full h-full'/>
                     </div>
 
                     <div className='comment-info'>
@@ -324,8 +301,8 @@ export const TiktokComponent = () => {
                     </div>
                   </div>
                   <div className='like-n-comment'>
-                    <Image src={comment_comment} alt='' />
-                    <Image src={heart_comment} alt='' />
+                    <Image src={comment_comment} alt='comments' />
+                    <Image src={heart_comment} alt='likes' />
                   </div>
                 </div>
 
@@ -336,19 +313,20 @@ export const TiktokComponent = () => {
 
           <div className='controls'>
             <button>
-              <Image src={heart_icon} alt='' />
+              <Image src={heart_icon} alt='likes' />
               422+
             </button>
             <button>
-              <Image src={comment_icon} alt='' /> 10+
+              <Image src={comment_icon} alt='comments' /> 10+
             </button>
             <button>
-              <Image src={share_icon} alt='' /> 10+
+              <Image src={share_icon} alt='share' /> 10+
             </button>
             <button>
-              <Image src={more_icon} alt='' />
+              <Image src={more_icon} alt='see more' />
             </button>
           </div>
+          
           <div className='navbar'>
             <div
               className='nav-prev hoverable'

@@ -1,5 +1,7 @@
 'use client'
 
+// join swav section on about page
+
 import React from 'react'
 import top_curve from '/public/curve-guide-top.png'
 import Image from 'next/image'
@@ -10,10 +12,9 @@ import { TransparentBtn } from '../components/TransparentBtn'
 export const JoinSection = () => {
   return (
     <div className='relative pb-16'>
-    <div className='w-full absolute -top-[3.25rem]'>
+    <div className='w-full absolute -top-[3.25rem] select-none'>
       <Image
         src={top_curve}
-        alt=''
         layout='intrinsic'
         objectFit='contain'
         quality={100}
@@ -49,7 +50,7 @@ export const JoinSection = () => {
         <div className='flex h-[30rem] sm:h-96 md:h-80 lg:h-[28rem] w-full overflow-hidden'>
           <Image
             src={join_swav}
-            alt=''
+            alt='SWAV HAIR STUDIO'
             layout='intrinsic'
             quality={100}
             className='h-full w-full object-cover'

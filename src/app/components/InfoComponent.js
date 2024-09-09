@@ -1,3 +1,7 @@
+'use client'
+
+// academy page and haircare page main section component
+
 import React from 'react'
 import { SectionTitle } from './SectionTitle'
 import { WhiteBtn } from './WhiteBtn'

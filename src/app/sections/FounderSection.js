@@ -1,4 +1,7 @@
-import Link from 'next/link';
+'use client'
+
+// founder section on home page
+
 import React from 'react'
 import { SectionTitle } from '../components/SectionTitle'
 import { TransparentOutlineBtn } from '../components/TransparentOutlineBtn'
@@ -43,6 +46,7 @@ export const FounderSection = () => {
         <div className='w-full h-[30rem] border-[#ffffff26] border flex items-center justify-center rounded-3xl overflow-hidden'>
           <Image
             src={founder}
+            alt='Mr. KaySwav'
             className='h-full w-full object-cover'
             quality={100}
           />

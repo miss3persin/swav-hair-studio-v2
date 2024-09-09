@@ -1,3 +1,7 @@
+'use client'
+
+// hero section on home page
+
 import React from 'react'
 import { SectionTitle } from '../components/SectionTitle'
 import { WhiteBtn } from '../components/WhiteBtn'

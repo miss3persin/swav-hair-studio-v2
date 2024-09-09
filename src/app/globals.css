@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* for the map display */
 @import 'leaflet/dist/leaflet.css';
 
+
+/* added overflow hidden because of cursor effect */
 html {
   overflow-x: hidden;
 }
 
 
-
+/* for the radio buttons on the contact section, tailwindcss couldn't surffice */
 .radio-label {
   display: flex;
   gap: 0.75rem;
@@ -22,7 +26,7 @@ html {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: #d1d5db; /* Gray background */
+  background-color: #d1d5db;
   position: relative;
   display: flex;
   align-items: center;
@@ -30,33 +34,32 @@ html {
 }
 
 .checkmark {
-  display: none; /* Hide by default */
+  display: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 input[type='radio']:checked + .radio-label .radio-background {
-  background-color: transparent; /* Remove gray background for selected */
+  background-color: transparent;
 }
 
 input[type='radio']:checked + .radio-label .radio-background .checkmark {
-  display: block; /* Show checkmark image for selected */
+  display: block;
 }
 
-/* Default checked radio button styling */
 input#general:checked + .radio-label .radio-background {
-  background-color: transparent; /* Transparent for default checked */
+  background-color: transparent;
 }
 
 input#general:checked + .radio-label .radio-background .checkmark {
-  display: block; /* Show checkmark for default checked */
+  display: block;
 }
 
 
 
 
-
+/* for the tiktok/video display of the home page, tailwindcss couldn't surffice */
 .tiktok-section-container__config {
     overflow: hidden;
 }
@@ -85,7 +88,6 @@ input#general:checked + .radio-label .radio-background .checkmark {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
     margin-top: 30px;
 }
 
@@ -161,8 +163,8 @@ input#general:checked + .radio-label .radio-background .checkmark {
     width: 100%;
     height: 100%;
     background: url('/NoiseTexture.png');
-    opacity: 0.4; /* Adjust opacity to your liking */
-    pointer-events: none; /* Make sure it doesn't interfere with user interactions */
+    opacity: 0.4;
+    pointer-events: none;
   }
   
   .video {
@@ -201,7 +203,6 @@ input#general:checked + .radio-label .radio-background .checkmark {
     max-height: 450px;
     display: flex;
     flex-direction: column;
-    /* border-bottom-right-radius: 30px; */
     gap: 12px;
   }
 
@@ -254,8 +255,6 @@ input#general:checked + .radio-label .radio-background .checkmark {
     background: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    /* margin-bottom: 5px; */
   }
 
   .transition-block {
@@ -269,7 +268,6 @@ input#general:checked + .radio-label .radio-background .checkmark {
         rgba(255, 255, 255, 0.3),
         rgba(0, 0, 0, 0)
       );
-      /* border-radius: 40px; */
       border-bottom-left-radius: 32px;
       border-bottom-right-radius: 32px;
       pointer-events: none;
@@ -285,7 +283,6 @@ input#general:checked + .radio-label .radio-background .checkmark {
     padding: 10px 25px;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(100px);
-    /* border-radius: 20px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 2px solid rgba(255, 255, 255, 0.3);
@@ -345,6 +342,7 @@ input#general:checked + .radio-label .radio-background .checkmark {
   }
 
 
+  /* media queries for the tiktok/video display, tailwindcss couldn't surffice */
   /* 3xl */
 @media (max-width: 2560px) {
   .previous-click, .next-click {
@@ -410,6 +408,8 @@ input#general:checked + .radio-label .radio-background .checkmark {
   }
 }
 
+
+/* cursor effect styling, tailwindcss couldn't surffice */
 .cursor__ball {
   pointer-events: none;
   position: absolute;
@@ -427,7 +427,6 @@ input#general:checked + .radio-label .radio-background .checkmark {
 }
 
 .cursor__ball--big circle {
-  /* r: 20; */
   fill: transparent;
   stroke: rgba(255, 255, 255, 1);
   stroke-width: 2;
@@ -440,13 +439,13 @@ input#general:checked + .radio-label .radio-background .checkmark {
 }
 
 .cursor__ball--small circle {
-  /* r: 9; */
   fill: transparent;
   stroke: rgba(255, 255, 255, 1);
   stroke-width: 1;
 }
 
-
+/* media queries fr cursor effect, tailwindcss couldn't surffice....
+  it could in this case but I just felt like adding it here */
 /* md */
 @media (max-width: 768px) {
 
@@ -455,6 +454,7 @@ input#general:checked + .radio-label .radio-background .checkmark {
   }
 }
 
+/* custom scrollbar styling */
 ::-webkit-scrollbar {
   width: 9px;
   background-color: transparent;

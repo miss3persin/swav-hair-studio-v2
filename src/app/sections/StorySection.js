@@ -1,3 +1,7 @@
+'use client'
+
+// story section on about page
+
 import React from 'react'
 import { SectionTitle } from '../components/SectionTitle'
 import story from '/public/story_img.jpg'
@@ -35,6 +39,7 @@ export const StorySection = () => {
           <div className='flex h-[30rem] w-full items-center justify-center overflow-hidden rounded-3xl border border-[#ffffff26]'>
             <Image
               src={story}
+              alt='SWAV HAIR STUDIO'
               className='h-full w-full object-cover'
               quality={100}
             />

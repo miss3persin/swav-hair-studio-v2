@@ -1,5 +1,6 @@
-// src/components/ScrollToTop.js
 'use client';
+
+// 'scroll to top' script
 
 import { useEffect } from 'react';
 

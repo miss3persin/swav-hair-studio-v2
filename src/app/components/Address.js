@@ -1,5 +1,7 @@
 'use client'
 
+// address and location component
+
 import Image from 'next/image'
 import { TransparentBtn } from './TransparentBtn'
 import arrow_btn from '/public/arrow_btn.png'

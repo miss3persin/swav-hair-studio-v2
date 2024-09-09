@@ -1,3 +1,7 @@
+'use client'
+
+// white button component
+
 import React from 'react'
 
 export const WhiteBtn = ({text, link, target}) => {

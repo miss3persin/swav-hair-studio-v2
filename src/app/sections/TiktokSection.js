@@ -1,3 +1,7 @@
+'use client'
+
+// video section on home page
+
 import React from 'react'
 import { SectionTitle } from '../components/SectionTitle'
 import { TiktokComponent } from '../components/TiktokComponent'
@@ -16,10 +20,9 @@ export const TiktokSection = () => {
         <TiktokComponent/>
     </div>
 
-    <div className='w-full absolute -bottom-[1.5rem]'>
+    <div className='w-full absolute -bottom-[1.5rem] select-none'>
         <Image
           src={top_curve}
-          alt=''
           layout='intrinsic'
           objectFit='contain'
           quality={100}

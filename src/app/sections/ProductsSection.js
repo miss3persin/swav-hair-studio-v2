@@ -1,3 +1,7 @@
+'use client'
+
+// products section on products page
+
 import React from 'react'
 import { SectionTitle } from '../components/SectionTitle'
 import { WhiteBtn } from '../components/WhiteBtn'
@@ -14,12 +18,6 @@ export const ProductsSection = () => {
     <div className='h-full bg-customBlack pb-10 pt-40'>
       <div className='container px-14'>
         <SectionTitle text='SWAV HAIR PRODUCTS' color='#FFFFFFB3' />
-
-        {/* <div className='text-customWhite mb-7'>
-          <p className='text-7xl font-light'>
-            Swav Hair: Modern Grooming Essentials
-          </p>
-        </div> */}
 
         <div className='flex gap-10 items-center'>
           <div className='w-6/12 text-customWhite my-auto'>
@@ -40,6 +38,9 @@ export const ProductsSection = () => {
 
             <WhiteBtn text='FIND OUT MORE' link='mailto:info@swavhair.co.uk' />
           </div>
+
+
+          {/* image container gallery */}
 
           <div className='h-full w-full flex flex-col gap-3'>
 

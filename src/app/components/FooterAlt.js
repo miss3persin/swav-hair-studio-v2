@@ -1,3 +1,7 @@
+'use client'
+
+// alternate footer component
+
 import React from 'react'
 import insta_icon from '/public/instagram_white.png'
 import tiktok_icon from '/public/tiktok_white.png'
@@ -19,6 +23,7 @@ export const FooterAlt = () => {
                 width={100}
                 height={100}
                 src={insta_icon}
+                alt='instagram'
                 layout='intrinsic'
                 objectFit='contain'
                 quality={100}
@@ -32,6 +37,7 @@ export const FooterAlt = () => {
                 width={100}
                 height={100}
                 src={tiktok_icon}
+                alt='tiktok'
                 layout='intrinsic'
                 objectFit='contain'
                 quality={100}

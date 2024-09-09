@@ -1,11 +1,11 @@
 'use client'
 
+// Address, location and map section on location page
+
 import { useState } from 'react'
 import { Address } from '../components/Address'
 import newcastle_img from '/public/newcastle.jpg'
 import sunderland_img from '/public/sunderland.jpg'
-// import { MapComponent } from '../components/MapComponent'
-import Image from 'next/image'
 import { SectionTitle } from '../components/SectionTitle'
 import dynamic from 'next/dynamic';
 

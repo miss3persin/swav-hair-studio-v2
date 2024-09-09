@@ -1,9 +1,15 @@
-'use client';
+'use client'
 
-import { useEffect } from 'react';
+// cursor effect script
+
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import gsap from 'gsap';
 
 const CursorEffects = () => {
+  const [refresh, setRefresh] = useState(0);
+  const pathname = usePathname();
+
   useEffect(() => {
     const $bigBall = document.querySelector('.cursor__ball--big');
     const $smallBall = document.querySelector('.cursor__ball--small');
@@ -13,19 +19,19 @@ const CursorEffects = () => {
     const handleMouseMove = (e) => {
       const bigBallRadius = 20;
       const smallBallRadius = 9;
-      
+
       gsap.to($bigBall, {
         duration: 0.6,
         x: e.pageX - bigBallRadius,
         y: e.pageY - bigBallRadius,
-        ease: "power3.out"
+        ease: 'power3.out',
       });
 
       gsap.to($smallBall, {
         duration: 0.15,
         x: e.pageX - smallBallRadius,
         y: e.pageY - smallBallRadius,
-        ease: "power3.out"
+        ease: 'power3.out',
       });
     };
 
@@ -34,7 +40,7 @@ const CursorEffects = () => {
       gsap.to($bigBall, {
         duration: 0.3,
         scale: 2,
-        ease: "power2.out"
+        ease: 'power2.out',
       });
     };
 
@@ -43,13 +49,13 @@ const CursorEffects = () => {
       gsap.to($bigBall, {
         duration: 0.3,
         scale: 1,
-        ease: "power2.out"
+        ease: 'power2.out',
       });
     };
 
     // Add event listeners
     document.body.addEventListener('mousemove', handleMouseMove);
-    $hoverables.forEach(el => {
+    $hoverables.forEach((el) => {
       el.addEventListener('mouseenter', onMouseHover);
       el.addEventListener('mouseleave', onMouseHoverOut);
     });
@@ -57,12 +63,17 @@ const CursorEffects = () => {
     // Clean up function
     return () => {
       document.body.removeEventListener('mousemove', handleMouseMove);
-      $hoverables.forEach(el => {
+      $hoverables.forEach((el) => {
         el.removeEventListener('mouseenter', onMouseHover);
         el.removeEventListener('mouseleave', onMouseHoverOut);
       });
     };
-  }, []);
+  }, [refresh]); // Re-run the effect when `refresh` changes
+
+  // Refresh the component when pathname changes
+  useEffect(() => {
+    setRefresh((prev) => prev + 1); // Trigger re-render by updating state
+  }, [pathname]); // Watch for pathname changes
 
   return (
     <>

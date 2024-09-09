@@ -1,3 +1,7 @@
+'use client'
+
+// hero section animation component
+
 import React from 'react'
 import hero_img from '/public/new_hero_img.jpg'
 import Image from 'next/image'
@@ -40,7 +44,7 @@ export const HeroImg = () => {
       <div className='w-64 h-64 rounded-full overflow-hidden flex items-center justify-center absolute'>
         <Image
           src={hero_img}
-          alt='SWAV'
+          alt='SWAV HAIR STUDIO'
           layout='fill'
           quality={100}
           className='h-full w-full object-cover'

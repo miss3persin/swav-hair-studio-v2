@@ -1,3 +1,5 @@
+// haircare page sections
+
 import React from 'react'
 import { NavbarSection } from '../sections/NavbarSection'
 import { InfoComponent } from '../components/InfoComponent'

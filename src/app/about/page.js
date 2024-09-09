@@ -1,10 +1,11 @@
+// about page sections
+
 import React from 'react'
 import { NavbarSection } from '../sections/NavbarSection';
 import { StorySection } from '../sections/StorySection';
 import { JoinSection } from '../sections/JoinSection';
 import { CommunityServiceSection } from '../sections/CommunityServiceSection';
 import { Footer } from '../components/Footer';
-
 
 
 export default function AboutPage() {

@@ -1,3 +1,7 @@
+'use client'
+
+// transparent button component
+
 import React from 'react'
 
 export const TransparentBtn = ({text, link, target}) => {

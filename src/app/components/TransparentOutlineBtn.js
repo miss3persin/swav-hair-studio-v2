@@ -1,3 +1,7 @@
+'use client'
+
+// transparent button component with an outline
+
 import React from 'react'
 
 export const TransparentOutlineBtn = ({text, link, target}) => {

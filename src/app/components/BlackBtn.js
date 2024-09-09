@@ -1,3 +1,7 @@
+'use client'
+
+// black button component
+
 import React from 'react'
 
 export const BlackBtn = ({text, link, target}) => {

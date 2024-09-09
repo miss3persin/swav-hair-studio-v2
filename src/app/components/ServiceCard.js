@@ -1,8 +1,12 @@
+'use client'
+
+// service card component
+
 import Image from 'next/image'
 
 export const ServiceCard = ({ icon, title, description }) => {
   return (
-    <div className='h-52 w-[22rem] rounded-xl border-2 border-white/15 bg-customBlack p-4 transition-transform duration-300 hover:scale-105 hover:shadow-lg'>
+    <div className='h-52 w-[22rem] rounded-xl border-2 border-white/15 bg-customBlack p-4 hoverable transition-transform duration-300 hover:scale-105 hover:shadow-lg'>
       <Image
         src={icon}
         alt={title}

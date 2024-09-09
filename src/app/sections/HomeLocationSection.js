@@ -1,5 +1,7 @@
 'use client'
 
+// location and address section on home page
+
 import { useState } from 'react'
 import { Address } from '../components/Address'
 import newcastle_img from '/public/newcastle.jpg'
@@ -54,10 +56,9 @@ export const HomeLocationSection = () => {
 
   return (
     <div className='relative pt-14 pb-16'>
-      <div className='w-full absolute -top-[4.5rem]'>
+      <div className='w-full absolute -top-[4.5rem] select-none'>
         <Image
           src={top_curve}
-          alt=''
           layout='intrinsic'
           objectFit='contain'
           quality={100}
@@ -72,10 +73,9 @@ export const HomeLocationSection = () => {
         handleNextStore={handleNextStore}
       />
 
-<div className='w-full absolute bottom-[3.5rem]'>
+<div className='w-full absolute bottom-[3.5rem] select-none'>
         <Image
           src={bottom_curve}
-          alt=''
           layout='intrinsic'
           objectFit='contain'
           quality={100}

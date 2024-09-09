@@ -1,3 +1,7 @@
+'use client'
+
+// error message component
+
 import React from 'react'
 
 const ErrorMessage = ({ onClose }) => {

@@ -1,3 +1,7 @@
+'use client'
+
+// main footer component
+
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
@@ -16,11 +20,11 @@ export const Footer = ({
         <div className='mb-14 flex justify-between pr-44 text-[0.8rem] font-semibold'>
           <div className='flex flex-col gap-2'>
             <p className='font-bold'>CONTACT INFORMATION</p>
-            {/* Phone number link */}
+            
             <a href='tel:+447732175493' className='hoverable font-semibold'>
               +44 7732 175493
             </a>
-            {/* Email link */}
+           
             <a
               href='mailto:info@swavhair.co.uk'
               className='hoverable text-sm font-semibold'
@@ -65,6 +69,7 @@ export const Footer = ({
                 width={100}
                 height={100}
                 src={img_1}
+                alt='instagram'
                 layout='intrinsic'
                 objectFit='contain'
                 quality={100}
@@ -78,6 +83,7 @@ export const Footer = ({
                   width={100}
                   height={100}
                   src={img_2}
+                  alt='tiktok'
                   layout='intrinsic'
                   objectFit='contain'
                   quality={100}

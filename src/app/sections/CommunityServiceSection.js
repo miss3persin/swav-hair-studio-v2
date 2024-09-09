@@ -1,3 +1,7 @@
+'use client'
+
+// community service section on about page
+
 import React from 'react'
 import { ServiceCard } from '../components/ServiceCard'
 import { SectionTitle } from '../components/SectionTitle'

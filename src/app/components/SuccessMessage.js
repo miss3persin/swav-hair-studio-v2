@@ -1,5 +1,8 @@
-// components/SuccessMessage.js
-import React from 'react';
+'use client'
+
+// success message component
+
+import React from 'react'
 
 const SuccessMessage = ({ onClose }) => {
   return (
