@@ -1,0 +1,93 @@
+import Image from 'next/image'
+import React from 'react'
+import Link from 'next/link'
+
+export const Footer = ({
+  textColor = 'customBlack',
+  bgColor = 'customWhite',
+  img_1 = '/bi_instagram.png',
+  img_2 = '/simple-icons_tiktok.png'
+}) => {
+  return (
+    <div
+      className={`bg-${bgColor} text-${textColor} border-t border-${textColor} border-opacity-15 py-16`}
+    >
+      <div className='container px-14'>
+        <div className='mb-14 flex justify-between pr-44 text-[0.8rem] font-semibold'>
+          <div className='flex flex-col gap-2'>
+            <p className='font-bold'>CONTACT INFORMATION</p>
+            {/* Phone number link */}
+            <a href='tel:+447732175493' className='hoverable font-semibold'>
+              +44 7732 175493
+            </a>
+            {/* Email link */}
+            <a
+              href='mailto:info@swavhair.co.uk'
+              className='hoverable text-sm font-semibold'
+            >
+              info@swavhair.co.uk
+            </a>
+          </div>
+
+          <div className='flex flex-col gap-4'>
+            <Link href='/academy'>
+              <p className='hoverable'>ACADEMY</p>
+            </Link>
+            <Link href='/products'>
+              <p className='hoverable'>PRODUCTS</p>
+            </Link>
+            <Link href='/location'>
+              <p className='hoverable'>LOCATION</p>
+            </Link>
+          </div>
+
+          <div className='flex flex-col gap-4'>
+            <Link href='/haircare'>
+              <p className='hoverable'>HAIRCARE</p>
+            </Link>
+
+            <Link href='/about'>
+              <p className='hoverable'>ABOUT</p>
+            </Link>
+            <Link href='/contact'>
+              <p className='hoverable'>CONTACT</p>
+            </Link>
+          </div>
+        </div>
+
+        <div className='flex items-center gap-10'>
+          <p className='text-sm font-semibold'>
+            © 2024 Swav Barbers. All rights reserved.
+          </p>
+          <div className='item-center flex gap-5'>
+            <div className='hoverable relative flex h-6 w-6 items-center justify-center'>
+              <Image
+                width={100}
+                height={100}
+                src={img_1}
+                layout='intrinsic'
+                objectFit='contain'
+                quality={100}
+                className='h-full w-full'
+              />
+            </div>
+
+            <div className='hoverable relative flex h-6 w-6 items-center justify-center'>
+              <a href='https://www.tiktok.com/@swavhairstudio' target='_blank'>
+                <Image
+                  width={100}
+                  height={100}
+                  src={img_2}
+                  layout='intrinsic'
+                  objectFit='contain'
+                  quality={100}
+                  className='h-full w-full'
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

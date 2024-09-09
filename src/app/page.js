@@ -1,11 +1,24 @@
 import React from 'react'
 
+import { HomeLocationSection } from './sections/HomeLocationSection'
+import { NavbarSection } from './sections/NavbarSection'
+import { HeroSection } from './sections/HeroSection'
+import { TiktokSection } from './sections/TiktokSection'
+import { FounderSection } from './sections/FounderSection'
+import { Footer } from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
+
 const page = () => {
   return (
-    <section className='py-8'>
-    <div className='container'>
-      <h1 className='text-3xl font-bold text-center'>My Next JS Boilerplate</h1>
-    </div>
+    <section className='bg-customWhite'>
+      <ScrollToTop/>
+    <NavbarSection/>
+    <HeroSection/>
+      <HomeLocationSection/>
+      <TiktokSection/>
+      <FounderSection/>
+      <Footer/>
+
   </section>
   )
 }
