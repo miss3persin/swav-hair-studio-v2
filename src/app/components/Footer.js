@@ -69,6 +69,7 @@ export const Footer = ({
           </p>
           <div className='item-center flex gap-5'>
             <div className='hoverable relative flex h-4 w-4 sm:h-6 sm:w-6 items-center justify-center'>
+            <a className='h-4 w-4 sm:h-6 sm:w-6' href='https://www.instagram.com/swavhairstudio/' target='_blank'>
               <Image
                 width={100}
                 height={100}
@@ -79,13 +80,14 @@ export const Footer = ({
                 quality={100}
                 className='h-full w-full'
               />
+              </a>
             </div>
 
             <div className='hoverable relative flex h-4 w-4 sm:h-6 sm:w-6 items-center justify-center'>
               <a className='h-4 w-4 sm:h-6 sm:w-6' href='https://www.tiktok.com/@swavhairstudio' target='_blank'>
                 <Image
-                  width={150}
-                  height={150}
+                  width={100}
+                  height={100}
                   src={img_2}
                   alt='tiktok'
                   layout='intrinsic'

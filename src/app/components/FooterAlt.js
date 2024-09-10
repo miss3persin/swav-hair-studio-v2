@@ -19,6 +19,7 @@ export const FooterAlt = () => {
 
             <div className='flex gap-4'>
             <div className='relative flex h-4 w-4 sm:h-6 sm:w-6 items-center hoverable justify-center'>
+            <a className='h-4 w-4 sm:h-6 sm:w-6' href='https://www.instagram.com/swavhairstudio/' target='_blank'>
               <Image
                 width={100}
                 height={100}
@@ -29,6 +30,7 @@ export const FooterAlt = () => {
                 quality={100}
                 className='h-full w-full'
               />
+              </a>
             </div>
 
             <div className='relative flex h-4 w-4 sm:h-6 sm:w-6 hoverable items-center justify-center'>
