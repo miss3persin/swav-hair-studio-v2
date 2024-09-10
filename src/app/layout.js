@@ -15,7 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      {/* <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
+      <link rel="icon" href="/favicon.png" sizes="512x512" type="image/png" />
       </Head>
       <body className={dmSans.className}>
       <ScrollToTop />
