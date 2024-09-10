@@ -19,13 +19,13 @@ export const ProductsSection = () => {
       <div className='container px-14'>
         <SectionTitle text='SWAV HAIR PRODUCTS' color='#FFFFFFB3' />
 
-        <div className='flex gap-10 items-center'>
-          <div className='w-6/12 text-customWhite my-auto'>
-          <p className='text-[3.5rem] leading-none mb-7'>
+        <div className='flex lg:flex-row flex-col gap-10 items-center'>
+          <div className='lg:w-full xl:w-6/12 text-customWhite my-auto flex flex-col lg:block'>
+          <p className='text-3xl sm:text-4xl lg:text-[2.5rem] xl:text-[3.5rem] md:leading-none mb-7'>
             Swav Hair: Modern Grooming Essentials
           </p>
 
-            <p className='text-lg leading-relaxed mb-7 text-justify'>
+            <p className='text-sm sm:text-base md:text-lg lg:text-base xl:text-lg leading-relaxed mb-5 sm:mb-[33rem] md:mb-[41rem] lg:mb-7 text-justify'>
               Swav Hair Studio blends the artistry of traditional barbering with
               modern grooming innovations. Our carefully experience curated
               range of premium hair care products and essential grooming tools
@@ -42,11 +42,11 @@ export const ProductsSection = () => {
 
           {/* image container gallery */}
 
-          <div className='h-full w-full flex flex-col gap-3'>
+          <div className='h-full w-full flex flex-col gap-3 sm:gap-0 lg:gap-3 relative'>
 
-            {/* first group */}
-            <div className='flex h-full w-full gap-3'>
-              <div className='h-full w-[68.5%]'>
+            {/* first group of pictures */}
+            <div className='flex sm:flex-row flex-col h-full w-full gap-3 sm:gap-0 lg:gap-2 xl:gap-3 lg:static sm:absolute sm:bottom-[36.5rem] md:bottom-[44rem]'>
+              <div className='h-full w-full lg:w-[68.8%] xl:w-[68.5%]'>
                 <Image
                   src={product_1}
                   alt='product 1'
@@ -57,7 +57,7 @@ export const ProductsSection = () => {
                 />
               </div>
 
-              <div className='flex h-full w-[33%] flex-col items-center justify-between gap-3'>
+              <div className='flex h-full w-full sm:w-1/2 lg:w-[33%] flex-col items-center justify-between gap-3 sm:gap-0 lg:gap-2 xl:gap-3'>
                 <div className='w-full'>
                   <Image
                     src={product_2}
@@ -82,11 +82,11 @@ export const ProductsSection = () => {
               </div>
             </div>
 
-            {/* second group */}
+            {/* second group of pictures */}
 
-            <div className='flex h-full w-full gap-3'>
+            <div className='flex sm:flex-row flex-col h-full w-full gap-3 sm:gap-0 lg:gap-2 xl:gap-3 lg:static sm:absolute sm:bottom-[21.8rem] md:bottom-[25.8rem]'>
              
-              <div className='flex h-full w-[33%] flex-col items-center justify-between gap-3'>
+              <div className='flex h-full w-full sm:w-1/2 lg:w-[33%] flex-col items-center justify-between gap-3 sm:gap-0 lg:gap-2 xl:gap-3'>
                 <div className='w-full'>
                   <Image
                     src={product_5}
@@ -110,7 +110,7 @@ export const ProductsSection = () => {
                 </div>
               </div>
 
-              <div className='h-full w-[68.5%]'>
+              <div className='h-full w-full lg:w-[68.8%] xl:w-[68.5%]'>
                 <Image
                   src={product_4}
                   alt='product 4'

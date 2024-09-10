@@ -17,7 +17,7 @@ export const StorySection = () => {
 
         <div className='container flex lg:flex-row flex-col-reverse items-center gap-5 sm:gap-10 rounded-3xl bg-customWhite px-5 py-8 sm:px-14 sm:py-8 text-customBlack'>
           <div className='my-auto w-full flex flex-col sm:block'>
-            <div className='mb-5 flex flex-col gap-3 sm:gap-5'>
+            <div className='mb-5 flex flex-col gap-3 sm:gap-8'>
               <p className='text-lg text-center sm:text-left sm:text-5xl'>Our Story</p>
 
               <p className='text-xs sm:text-base font-light md:text-left text-justify '>

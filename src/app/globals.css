@@ -94,6 +94,19 @@ input#general:checked + .radio-label .radio-background .checkmark {
   display: block;
 }
 
+  /* media queries for the radio buttons, tailwindcss couldn't surffice */
+  /* xxs */
+  @media (max-width: 475px) {
+    .radio-label {
+      font-size: 1rem;
+    }
+
+    .radio-background {
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+  }
+
 
 
 
