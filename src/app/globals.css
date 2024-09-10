@@ -137,8 +137,8 @@ input#general:checked + .radio-label .radio-background .checkmark {
     color: white;
     border-radius: 40px;
     padding: 0;
-    width: 550px;
-    height: 470px;
+    /* width: 550px; */
+    height: 500px;
     margin: 0 auto;
     position: relative;
     perspective: 1000px; 
@@ -148,14 +148,14 @@ input#general:checked + .radio-label .radio-background .checkmark {
     opacity: 0.3;
     transform-style: preserve-3d;
     perspective: 1200px;
-    transform: translateX(-100%) translateY(-5%) scale(0.9) rotateY(75deg);
+    transform: translateX(-150%) translateY(-5%) scale(0.9) rotateY(75deg);
   }
   
   .video-player-container__right {
     opacity: 0.3;
     transform-style: preserve-3d;
     perspective: 1200px;
-    transform: translateX(100%) translateY(-5%) scale(0.9) rotateY(-75deg);
+    transform: translateX(150%) translateY(-5%) scale(0.9) rotateY(-75deg);
   }
 
   .video-player-container__left,
@@ -185,7 +185,7 @@ input#general:checked + .radio-label .radio-background .checkmark {
     color: white;
     border-radius: 32px;
     padding: 5px 5px 10px 5px;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     margin: 0 auto;
     transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
@@ -206,7 +206,7 @@ input#general:checked + .radio-label .radio-background .checkmark {
   }
   
   .video {
-   width: 57.9%;
+   /* width: 100%; */
    height: 100%;
    border: none;
   }
@@ -224,6 +224,7 @@ input#general:checked + .radio-label .radio-background .checkmark {
     width: 50%;
     height: 100%;
     position: relative;
+    display: none;
   }
   
   .comments-header {
@@ -390,7 +391,7 @@ input#general:checked + .radio-label .radio-background .checkmark {
 
   .video-player-container__main {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,6 +405,10 @@ input#general:checked + .radio-label .radio-background .checkmark {
     height: 100%;
     width: 380px;
   }
+
+  .video-player-container__main {
+    height: 90vh;
+}
 
 
 }
@@ -430,13 +435,17 @@ input#general:checked + .radio-label .radio-background .checkmark {
     height: 100%;
     width: 100px;
   }
+
+  .video-player-container__main {
+    height: 70vh;
+}
 }
 
 /* md */
 @media (max-width: 768px) {
   .previous-click, .next-click {
     height: 100%;
-    width: 80px;
+    width: 70px;
   }
 }
 
@@ -455,6 +464,9 @@ input#general:checked + .radio-label .radio-background .checkmark {
     height: 100%;
   }
 
+  .video-player-container__main {
+    height: 100vh;
+}
 }
 
 

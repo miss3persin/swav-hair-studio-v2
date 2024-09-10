@@ -15,12 +15,12 @@ export const StorySection = () => {
           <SectionTitle text='ABOUT SWAV HAIR' color='#FFFFFFB3' />
         </div>
 
-        <div className='flex items-center gap-10 rounded-3xl bg-customWhite px-14 py-8 text-customBlack'>
-          <div className='my-auto w-full'>
-            <div className='mb-5 flex flex-col gap-5'>
-              <p className='text-5xl'>Our Story</p>
+        <div className='container flex lg:flex-row flex-col-reverse items-center gap-5 sm:gap-10 rounded-3xl bg-customWhite px-5 py-8 sm:px-14 sm:py-8 text-customBlack'>
+          <div className='my-auto w-full flex flex-col sm:block'>
+            <div className='mb-5 flex flex-col gap-3 sm:gap-5'>
+              <p className='text-lg text-center sm:text-left sm:text-5xl'>Our Story</p>
 
-              <p className='text-base font-light'>
+              <p className='text-xs sm:text-base font-light md:text-left text-justify '>
                 At Swav Hair, we blend modern barbering with over two decades of
                 traditional experience, all centered on customer satisfaction.
                 Our skilled professionals bring passion, creativity, and
@@ -36,7 +36,7 @@ export const StorySection = () => {
             </div>
           </div>
 
-          <div className='flex h-[30rem] w-full items-center justify-center overflow-hidden rounded-3xl border border-[#ffffff26]'>
+          <div className='flex h-full sm:h-[30rem] w-full items-center justify-center overflow-hidden rounded-3xl border border-[#ffffff26]'>
             <Image
               src={story}
               alt='SWAV HAIR STUDIO'

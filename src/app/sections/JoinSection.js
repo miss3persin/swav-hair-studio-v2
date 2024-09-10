@@ -12,7 +12,7 @@ import { TransparentBtn } from '../components/TransparentBtn'
 export const JoinSection = () => {
   return (
     <div className='relative pb-16'>
-    <div className='w-full absolute -top-[3.25rem] select-none 2xl:hidden'>
+    <div className='w-full absolute hidden sm:block sm:-top-[1rem] md:-top-[1.5rem] lg:-top-[2.3rem] xl:-top-[3.25rem] select-none 2xl:hidden'>
       <Image
         src={top_curve}
         layout='intrinsic'
@@ -29,7 +29,7 @@ export const JoinSection = () => {
         <SectionTitle text='JOIN SWAV HAIR' color='#222222B3' />
       </div>
 
-      <div className='flex lg:flex-row flex-col border'>
+      <div className='flex lg:flex-row flex-col-reverse border'>
 
         <div className='flex lg:w-10/12 py-6 lg:py-0 w-full flex-col justify-center text-customBlack relative'>
           <div className='flex flex-col mb-7 gap-5 px-10 lg:px-8'>
@@ -38,7 +38,7 @@ export const JoinSection = () => {
           </div>
 
 
-          <div className='flex flex-col items-start pl-10 sm:px-10 lg:px-8'>
+          <div className='flex flex-col items-start pl-6 sm:pl-10 sm:px-10 lg:px-8'>
             <TransparentBtn
               text='FIND OUT MORE'
               link='mailto:info@swavhair.co.uk'

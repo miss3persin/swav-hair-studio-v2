@@ -262,6 +262,7 @@ export const TiktokComponent = () => {
               />
 
             </div>
+            
             <div className='comments-section'>
               <div className='comments-header'>
                 <h3>Views - 777</h3>
