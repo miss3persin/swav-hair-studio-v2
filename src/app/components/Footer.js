@@ -17,7 +17,7 @@ export const Footer = ({
       className={`bg-${bgColor} text-${textColor} border-t border-${textColor} border-opacity-15 py-16`}
     >
       <div className='container px-8 sm:px-14'>
-        <div className='mb-14 flex justify-between lg:pr-44 text-[0.7rem] font-semibold'>
+        <div className='mb-14 flex justify-between lg:pr-10 xl:pr-44 text-[0.8rem] lg:text-[0.9rem] font-semibold'>
           <div className='flex flex-col gap-2 w-full'>
             <p className='font-bold'>CONTACT INFORMATION</p>
             
@@ -27,7 +27,7 @@ export const Footer = ({
            
             <a
               href='mailto:info@swavhair.co.uk'
-              className='hoverable text-sm font-semibold'
+              className='hoverable font-semibold'
             >
               info@swavhair.co.uk
             </a>
@@ -64,7 +64,7 @@ export const Footer = ({
         </div>
 
         <div className='flex sm:flex-row flex-col sm:items-center gap-6 sm:gap-10'>
-          <p className='text-xs sm:text-sm font-semibold'>
+          <p className='text-xs sm:text-sm lg:text-base font-semibold'>
             © 2024 Swav Barbers. All rights reserved.
           </p>
           <div className='item-center flex gap-5'>
